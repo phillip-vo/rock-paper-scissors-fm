@@ -1,0 +1,174 @@
+.app__compareselection {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    margin: 10rem auto 5rem auto;
+
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 5rem auto 0 auto;
+        justify-content: center;
+
+        .app__compareselection-user {
+            gap: 1rem;
+            order: 1;
+        }
+
+        .app__compareselection-computer {
+            gap: 1rem;
+            order: 2;
+            align-items: center;
+        }
+    }
+}
+
+.app__compareselection-user, .app__compareselection-computer {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+
+    .app__compareselection-align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+
+        span {
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+
+            @media screen and (max-width: 768px) {
+                font-size: .75rem;
+                order: 2;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 60%;
+        }
+    }
+    
+}
+
+.app__compareselection-user-choice, .app__compareselection-computer-choice {
+    position: relative;
+    scale: 1.5;
+    margin-top: 7rem;
+
+    @media screen and (max-width: 768px) {
+        scale: 1;
+    }
+}
+
+.app__compareselection-circle {
+    width: 225px;
+    height: 225px;
+
+    margin-top: 6rem;
+
+    border-radius: 50%;
+    background-color: black;
+    opacity: .2;
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.app__compareselection-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 5rem;
+    z-index: 2;
+
+    span {
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(349, 70%, 56%);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.app__compareselection-winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 475px;
+    height: 475px;
+
+    border-radius: 50%;
+
+    background-color: rgba($color: #ffffff, $alpha: .03);
+    z-index: -3;
+
+    @media screen and (max-width: 768px) {
+        width: 200px;
+        height: 200px;
+    } 
+    
+
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border-radius: 50%;
+    }
+
+    div:nth-child(1) {
+        width: 275px;
+        height: 275px;
+        background-color: rgba($color: #ffffff, $alpha: .05);
+        z-index: -1;
+
+        @media screen and (max-width: 768px) {
+            width: 175px;
+            height: 175px;
+        } 
+    }
+
+    div:nth-child(2) {
+        width: 375px;
+        height: 375px;
+        background-color: rgba($color: #ffffff, $alpha: .04);
+        z-index: -2;
+
+        @media screen and (max-width: 768px) {
+            width: 150px;
+            height: 150px;
+        } 
+    }
+
+    
+}

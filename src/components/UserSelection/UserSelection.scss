@@ -1,0 +1,59 @@
+.app__userselection {
+    position: relative;
+
+    width: 313px;
+    height: 278px;
+    
+    margin: 10rem auto;
+
+    border: 1px solid black;
+
+    .app__userselection-bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+       width: 200px;
+       height: 165px;
+
+       margin: 10rem auto 10rem auto;
+
+       .app__userselection-paper {
+            position: absolute;
+            top: -50px;
+            left: -50px;
+        }
+
+       .app__userselection-scissors {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+        }
+
+        .app__userselection-rock {
+            position: absolute;
+            bottom: -50px;
+            left: 35px;  
+        }
+    }
+
+}
+
+.app__userselection-paper {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.app__userselection-scissors {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.app__userselection-rock {
+    position: absolute;
+    bottom: -100px;
+    left: 50px;  
+}

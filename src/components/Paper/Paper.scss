@@ -1,0 +1,52 @@
+.app__paper {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(var(--paper-gradient));
+    border-radius: 50%;
+
+    box-shadow: inset 0 -10px 0 rgba(0, 0, 0, .2);
+
+    cursor: pointer;
+
+    &:hover {
+        scale: .95;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 125px;
+        height: 125px;
+
+        .app__paper-inner {
+            width: 100px;
+            height: 100px;
+        
+            
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+.app__paper-inner {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: white;
+    border-radius: 50%;
+
+    box-shadow: inset 0 10px 0 rgba(0, 0, 0, .2);
+    
+    img {
+        width: 60px;
+    }
+}

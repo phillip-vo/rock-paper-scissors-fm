@@ -1,0 +1,65 @@
+.app__score {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    padding: 1.25rem;
+    
+    border: 3px solid var(--header-outline);
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+
+        padding: 1rem;
+
+        .app__score-logo {
+            img {
+                width: 100px;
+            }
+        }
+
+        .app__score-card {
+            width: 75px;
+            height: 75px;
+
+            span:nth-child(1) {
+                font-size: .75rem;
+            }
+
+            span:nth-child(2) {
+                font-size: 2.75rem;
+            }
+        }
+        
+    }
+}
+
+.app__score-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 160px;
+    height: 125px;
+
+    background-color: white;;
+
+    border-radius: 10px;
+    
+    span:nth-child(1) {
+        color: var(--score-text);
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    span:nth-child(2) {
+        color: var(--dark-text);
+        font-size: 4rem;
+    }
+}
